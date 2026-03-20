@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place: Costa Rica | Diego Arriola</title>
+  <meta name="description" content="Responsive place page for Costa Rica with weather and place details for WDD 131.">
+  <meta name="author" content="Diego Arriola">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <p class="eyebrow">WDD 131 Place Page</p>
+      <h1>Costa Rica</h1>
+      <p class="tagline">Rainforest peaks, warm coastlines, and cloud-kissed weather in one vibrant destination.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/place-hero-large.webp" type="image/webp">
+        <img src="images/place-hero-small.webp" alt="Costa Rica temple and surrounding tropical landscape" width="600" height="343">
+      </picture>
+
+      <div class="overlay-card data-card">
+        <h2>Data</h2>
+        <dl>
+          <div>
+            <dt>Capital:</dt>
+            <dd>San Jose</dd>
+          </div>
+          <div>
+            <dt>Area:</dt>
+            <dd>51,100 km2</dd>
+          </div>
+          <div>
+            <dt>Population:</dt>
+            <dd>5.2 million</dd>
+          </div>
+          <div>
+            <dt>Languages:</dt>
+            <dd>Spanish, English</dd>
+          </div>
+          <div>
+            <dt>Currency:</dt>
+            <dd>Costa Rican Colon</dd>
+          </div>
+          <div>
+            <dt>Time Zone:</dt>
+            <dd>UTC-6</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="overlay-card weather-card">
+        <div class="weather-heading">
+          <h2>Weather</h2>
+          <img src="images/weather-cloud.svg" alt="Partly cloudy weather icon" class="weather-icon" width="56" height="56">
+        </div>
+        <dl>
+          <div>
+            <dt>Condition:</dt>
+            <dd>Partly Cloudy</dd>
+          </div>
+          <div>
+            <dt>Temperature:</dt>
+            <dd><span id="temperature">8</span> °C</dd>
+          </div>
+          <div>
+            <dt>Wind:</dt>
+            <dd><span id="windSpeed">12</span> km/h</dd>
+          </div>
+          <div>
+            <dt>Humidity:</dt>
+            <dd>76%</dd>
+          </div>
+          <div>
+            <dt>Wind Chill:</dt>
+            <dd id="windChill">Calculating...</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Diego Arriola | Costa Rica</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
